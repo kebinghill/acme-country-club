@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kebinghill/acme-country-club#readme",
   "dependencies": {
+    "dependencies": "^0.0.1",
     "express": "^4.17.1",
     "pg": "^8.5.1",
     "sequelize": "^6.5.0"
