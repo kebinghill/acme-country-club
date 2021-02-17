@@ -87,7 +87,18 @@ const syncAndSeed = async () => {
 
   moe.sponsorId = kevin.id;
   await moe.save();
+  one.bookedById = kacper.id;
+  one.facilityId = tennis.id;
+  await one.save();
 };
+
+app.get('/', async (req, res) => {
+  try {
+    res.send(await Booking.findAll());
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 const init = async () => {
   try {
